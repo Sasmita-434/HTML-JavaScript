@@ -1,0 +1,44 @@
+<html>
+	<head>
+	 <title>Array Function</title>
+	</head>
+	<body>
+		<i><u><h2>Array Elements</u></i></h2>
+		<script>
+			var blank=[];
+			blank[0]='mmm';
+			blank[1]='zzz';
+			blank[2]='sss';
+			blank[3]='aaa';
+			for(var x=0;x<blank.length;x++)
+			document.write(blank[x]+'<br />');
+		</script>
+		<i><u><h2>After Sorting</u> :-</i></h2>
+		<script>
+			blank.sort();
+			for(var x=0;x<blank.length;x++)
+			document.write(blank[x]+'<br />');
+		</script>
+		<i><u><h2>After Reverse</u> :-</i></h2>
+		<script>
+			blank.reverse();
+			for(var x=0;x<blank.length;x++)
+			document.write(blank[x]+'<br />');
+		</script>
+		<br /><br />
+		<script>
+			var con=new Array();
+			con[0]="yellow";
+			con[1]="burger";
+			document.write(con[0]+"<br />"+con[1]);
+			document.write('<i><u><h2>After Concatenation</u> :-</i></h2>');
+			var newarray=blank[0].concat(con[0]);
+			for(var x=0;x<newarray.length;x++)
+			document.write(newarray[x]);
+			document.write('<br />');
+			var newarray=blank.concat(con);
+			for(var x=0;x<newarray.length;x++)
+			document.write(newarray[x]);
+		</script>
+	</body>
+</html>

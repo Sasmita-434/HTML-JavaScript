@@ -1,0 +1,49 @@
+<html>
+	<head>
+		<title>CSS selector</title>
+		<style>
+			*{
+				margin:0px;
+				margin-bottom:2px;
+				padding:2px;
+			}
+			h2{
+				background-color:red;
+				text-align:center;
+			}
+			#idselect{
+				background-color:yellow;
+				text-align:center;
+			}
+			.classelect{
+				background-color:gray;
+				text-align:center;
+			}
+			#group,p{
+				background-color:green;
+				text-align:center;
+			}
+				input[type]{border:2px solid blue;font-style-align:center;}
+				input[type="text"]{background-color:lightblue;}
+				input[type="email"]{background-color:pink;}
+			a:link{text-decoration:none;}
+			a:hover{background:yellow;}
+			input:hover{background:yellow;}
+		</style>
+	</head>
+	<body>
+		<h1>CSS Selectors</h1>
+		<h2>Tag Selector</h2>
+		<h2 id="idselect">ID Selector</h2>
+		<h2 class="classelect">Class Selector - 1</h2>
+		<h2 class="classelect">Class Selector - 2</h2>
+		<h3 id="group">Grouping Selector</h3>
+		<p>This selector is used to call a group of HTML elements
+		by tagname,classname, or id.</p>
+		<h2 style="background-color:cyan">Atrribute Selector</h2>
+		<center><input type="text" value="Enter your name">
+		<input type="email" value="Enter your email-id"></center>
+		<h2>Pseudo Selector</h2>
+		<a href="#" style="font-size:30px">Click here</b></a>
+	</body>
+</html>

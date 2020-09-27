@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>Login Page</title>
+		<script type="text/javascript">
+			function check()
+			{
+				var username = document.getElementById("uname");
+				var password = document.getElementById("pwd");
+				if(username.value=="sasi" && password.value=="miki")
+				{
+					alert("You have successfully signed in");
+				else
+					alert("Invalid Username and Password");
+			}
+		</script>
+	</head>
+	<body>
+		<h2>Login</h2>
+		Username:<input type="text" id="uname" /><br /><br />
+		Password:<input type="password" id="pwd" /><br /><br />
+		<input type="button" value="Sign In" onClick="check()" /><br />
+	</body>
+</html>

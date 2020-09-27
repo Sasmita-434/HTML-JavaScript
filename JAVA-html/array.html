@@ -1,0 +1,35 @@
+<html>
+	<head>
+		<title>JavaScript</title>
+		<script>
+			document.write("<h2><u><i>"+"Inside head tag"+"</i></u></h2>");
+			x=12;
+			document.write("<br />"+"x = "+x+"<br /><br />");
+		</script>
+	</head>
+	<body>
+		<script>
+			document.write("<h2><i><u>"+"Inside body tag"+"</u></i></h2>"+"<br />");
+			//array created with specific elements
+			var arr=['9',10,21];
+			document.write("<b>Array Elements using for each-loop</b>"+'<br />');
+			for(var i in arr)
+				document.write(arr[i]+'<br />');   //using for-each loop
+			document.write("<b>Array Elements using for loop</b>"+'<br />');
+			for(var i=0;i<arr.length;i++)
+				document.write(arr[i]+'<br />');  //using for loop
+			document.write("<b>Size of the array is:</b>"+arr.length+"<br />");//array size
+			//array created by blank array
+			document.write("<b>Inserting Array Elements using blank array</b>"+'<br />');
+			var blank=[];
+			blank[0]='Sasmita';
+			blank[1]='Pradhan';
+			document.write(blank[0]+'<br />'+blank[1]+"<br />");
+			document.write("<b><u><i>Array of Constructor</i></u></b>"+"<br />");
+			var con=new Array();
+			con[0]="yellow";
+			con[1]="burger";
+			document.write(con[0]+"<br />"+con[1])
+		</script>
+	</body>
+</html>
