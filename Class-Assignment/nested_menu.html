@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Site</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .clear{
+            clear: both;
+        }
+        a{
+            text-decoration: none; 
+        }
+        ul{
+            list-style: none;
+        }
+        .d1{
+            margin: auto;
+            width: 1200;
+        }
+        .d2{
+            background: black;
+            color: #fff;
+        }
+        .d2 > ul > li{
+            float: left;
+            border-left: 1px solid #fff;
+            background: black;
+        }
+        .d2 > ul > li > a{
+           display:block;
+           color:#ccc;
+           padding: 15px 35px ;
+       }
+       .d2 > ul > li > a:hover{
+           background: darkblue;
+       }
+       .d2 > ul > li:first-child{
+            border: none;
+        }
+       .d2 > ul{
+           position: relative;
+           z-index: 1;
+       }
+       .d2 > ul > li > ul{
+           display: none;
+           position: absolute;
+       }
+       .d2 > ul > li > ul > li{
+           height: 41px;
+           background: black;
+           border-top: 1px solid #fff;
+       }
+       .d2 > ul > li > ul > li > a{
+           display: block;
+           color:#ccc;
+           padding: 15px 35px ;
+       }
+       .d2 > ul > li:hover > ul{
+            display: block; 
+       }
+       .d2 > ul > li > ul > li:hover{
+            background: darkblue;
+       }
+      .d2 > ul > li > ul > li > ul{
+          display: none;
+          position: relative;
+          left: 170px;
+          bottom: 50px;
+      }
+      .d2 > ul > li > ul > li > ul > li{
+           background: black;
+           border-top: 1px solid #fff;
+           display: block;
+           color:#ccc;
+           padding: 10px 20px ;
+       }
+       .d2 > ul > li > ul > li:hover > ul{
+            display: block; 
+       }
+       .d2 > ul > li > ul > li > ul >li:hover{
+            background: darkblue;
+       }
+    </style>
+</head>
+<body>
+    <div class="d1">
+    <div class="d2">
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="#">ABOUT</a>
+                    <ul>
+                        <li><a href="#">Why Me</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">History</a></li>
+                    </ul>
+                </li>
+                <li><a href="career.html">CAREER</a></li>
+                <li><a href="#">TRAINING</a>
+                    <ul>
+                        <li><a href="#">ASP.net</a>
+                            <ul>
+                                <li>Core ASP.net</li>
+                                <li>Advanced ASP.net</li>
+                                <li>MVC</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Web Designing</a>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Photoshop</li>
+                            </ul> 
+                        </li>
+                        <li><a href="#">Java</a>
+                            <ul>
+                                <li>Core Java</li>
+                                <li>Advanced Java</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">PHP</a>
+                            <ul>
+                                <li>Mysql</li>
+                                <li>Wordpress</li>
+                            </ul>
+                        </li>
+                        <li><a href="#">AQT</a>
+                            <ul>
+                                <li>HTML</li>
+                                <li>CSS</li>
+                                <li>Photoshop</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        <div class="clear"></div>
+    </div>
+    </div>
+</body>
+</html>

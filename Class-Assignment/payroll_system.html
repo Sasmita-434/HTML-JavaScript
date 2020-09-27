@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payroll System</title>
+    <style>
+        #heading{
+            text-decoration-line: underline;
+            font-style: italic;
+        }
+        .btn{
+            padding: 8px 30px;
+            font-size: 15px;
+            border-radius: 3px;
+            font-weight: bolder;
+            background-color: lightseagreen;
+        }
+        .btn:hover{
+            background: red;
+        }
+        table{
+            background-color: lightseagreen;
+        }
+    </style>
+</head>
+<body>
+    <font  size="4px">
+    <center>
+        <form>
+            <h1 id="heading">Payroll System</h1>
+         <table cellpadding="5px" >
+            <tr>
+                <td><label for="ecode"><b>Employee code : </b></label></td>
+                <td><input type="text" id="ecode" name="ecode"/></td>
+                <td></td><td></td><td></td>
+                <td><label for="ename"><b>Employee Name : </b></label></td>
+                <td><input type="text" id="ename" name="ename"/></td>
+            </tr><tr>
+                <td><label for="des"><b>Designation : </b></label></td>
+                <td><input type="text" id="des" name="des"/></td>
+                <td></td><td></td><td></td>
+                <td><label for="doj"><b>Date-of-Joining : </b></label></td>
+                <td><input type="date" id="doj" name="doj"/></td>
+            </tr><tr>
+                <td><label for="mail"><b>Email-id : </b></label></td>
+                <td><input type="email" id="mail" name="mail"/></td>
+                <td></td><td></td><td></td>
+                <td><label for="no"><b>Mobile Number :</b></label></td>
+                <td><input type="number" id="no" name="no"/></td>
+            </tr><tr>
+                <td><label for="bs"><b>Basic Salary : </b></label></td>
+                <td><input type="number" id="bs" name="bs"/></td>
+                <td></td><td></td><td></td>
+                <td><label for="add"><b>Address : </b></label></td>
+                <td><textarea id="add" rows="2" name="add"></textarea></td>
+            </tr><tr>
+                <td><label for="da"><b>DA : </b></label></td>
+                <td><input type="number" id="da" name="da"/></td>
+            </tr><tr>
+                <td><label for="ta"><b>TA : </b></label></td>
+                <td><input type="number" id="ta" name="ta"/></td>
+            </tr><tr>
+                <td><label for="hra"><b>HRA : </b></label></td>
+                <td><input type="number" id="hra" name="hra"/></td>
+            </tr><tr>
+                <td><label for="gross"><b>Gross Pay : </b></label></td>
+                <td><input type="text" id="gross" name="gross"/></td>
+            </tr><tr>
+                <td><label for="tax"><b>Tax : </b></label></td>
+                <td><input type="text" id="tax" name="tax"/></td>
+            </tr><tr>
+                <td><label for="nets"><b>Net Salary : </b></label></td>
+                <td><input type="text" id="nets" name="nets"/></td>
+            </tr>
+         </table>
+         <br />
+         <button type="submit" class="btn" >Submit</button>
+         <button type="reset" class="btn" >Reset</button>
+    </form>
+    </center>
+</font>
+</body>
+</html>

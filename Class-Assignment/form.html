@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Representation</title>
+</head>
+<body>
+    <form>
+		<table>
+			<tr>
+				<td for="name">Name</td>
+				<td><input type="text" name="Name" id="name" /></td>
+            </tr>
+            <tr>
+				<td for="mail">Email</td>
+				<td><input type="email" name="Email" id="mail" />
+				<button>Check</button></td>	
+            </tr>
+            <tr>
+				<td for="age">Age</td>
+				<td><input type="number" name="Age" id="age" min="1" max="150" size="6"/></td>
+            </tr>
+            <tr>
+				<td for="country">Country</td>
+				<td><input type="text" name="Country" value="India" id="country" disabled/></td>
+            </tr>
+            <tr>
+				<td for="pwd">Password</td>
+				<td><input type="password" name="Password" id="pwd" required /></td>
+            </tr>
+            <tr>
+                <td for="resume">Resume</td>
+                <td><input type="file" name="Resume" id="resume" /></td>
+             </tr>
+             <tr>
+				<td>Hobbies</td>
+				<td>
+                    <input type="checkbox" name="Cricket" value="Cricket" />Cricket
+                    <input type="checkbox" name="Football" value="Football" />Football
+                </td>
+            </tr>
+            <tr>
+			<tr>
+				<td for="gender">Gender</td>
+				<td id="gender">
+                    <input type="radio" name="gender" value="Male" />Male
+                    <input type="radio" name="gender" value="Female" />Female
+                </td>
+            </tr>
+            <tr>
+                <td>City</td>
+                <td for="city">
+				<select id="city">
+                    <option selected disabled>--Select City--</option>
+                    <optgroup label="Metros">
+                    <option>New Delhi</option>
+                    <option>Mumbai</option>
+                    <option>Chennai</option>
+                    <option>Kolkata</option>
+                    </optgroup>
+                    <optgroup label="Others">
+                    <option>Noida</option>
+                    <option>Gurgaon</option>
+                    <option>Faridabad</option>
+                    <option>Gaziabad</option>
+                </optgroup>
+				</select>
+				</td>
+            </tr>
+            <tr>
+                <td for="address">Address</td>
+                <td><textarea id="address" rows="5"></textarea>
+            </tr>
+            <tr>
+                <td></td>
+			    <td><input type="submit" name="Submit">
+                <input type="reset" name="Reset"></td>
+            </tr>
+            
+			</table>
+		</form>
+</body>
+</html>
